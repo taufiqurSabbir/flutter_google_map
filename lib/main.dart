@@ -48,12 +48,16 @@ class _HomeState extends State<Home> {
           zoomControlsEnabled: true,
           zoomGesturesEnabled: true,
           trafficEnabled: true,
-          onTap:(latlong){
-            print('helo taped');
+          compassEnabled: true,
+          onTap: (LatLng l) {
+            print(l);
           },
-          onMapCreated: (GoogleMapController? controler){
+          onMapCreated: (GoogleMapController? controler) {
             print('map created');
           },
+          mapType: MapType.normal,
+          fortyFiveDegreeImageryEnabled: true,
+          buildingsEnabled: true,
         ));
   }
 }
