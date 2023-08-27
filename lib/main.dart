@@ -191,6 +191,21 @@ class _HomeState extends State<Home> {
             ),
           },
 
+          polygons: <Polygon>{
+            Polygon(
+              polygonId: PolygonId('poli_1'),
+              fillColor: Colors.purple.shade100,
+              strokeWidth: 1,
+              points: [
+                LatLng(25.38007256135803, 88.90719860836968),
+                LatLng(25.36696487023652, 88.93080221605025),
+                LatLng(25.347810071397415, 88.91586730296443),
+                LatLng(25.373945353556465, 88.89930211276473),
+                LatLng(25.384105345099663, 88.91818614871958),
+              ]
+            )
+          },
+
 
         ));
   }
